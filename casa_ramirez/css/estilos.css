@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f5; color: #222; }
+
+.layout { display: flex; min-height: 100vh; }
+.menu { width: 230px; background: #0f6e56; color: #fff; padding: 20px 14px; display: flex; flex-direction: column; gap: 6px; }
+.menu h2 { margin: 0 0 16px; font-size: 20px; }
+.menu a { color: #fff; text-decoration: none; padding: 9px 12px; border-radius: 6px; }
+.menu a:hover, .menu a.activo { background: #085041; }
+.menu .usuario { margin-top: auto; font-size: 14px; border-top: 1px solid rgba(255,255,255,.3); padding-top: 12px; }
+.menu .usuario a { padding: 0; text-decoration: underline; }
+
+.contenido { flex: 1; padding: 28px; }
+h1 { margin-top: 0; color: #085041; }
+
+.tarjeta { background: #fff; border: 1px solid #d3d1c7; border-radius: 10px; padding: 18px; margin-bottom: 20px; }
+.tarjetas { display: flex; gap: 16px; flex-wrap: wrap; }
+.tarjetas .tarjeta { flex: 1; min-width: 200px; }
+.numero { font-size: 32px; font-weight: bold; color: #0f6e56; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #e2e0d8; text-align: left; font-size: 14px; }
+th { background: #0f6e56; color: #fff; }
+tr.bajo td { background: #fdecea; }
+
+form.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; }
+label { display: block; font-size: 13px; margin-bottom: 4px; color: #444; }
+input, select { width: 100%; padding: 8px; border: 1px solid #b4b2a9; border-radius: 6px; font-size: 14px; }
+button, .boton { background: #0f6e56; color: #fff; border: 0; padding: 9px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }
+button:hover, .boton:hover { background: #085041; }
+button.peligro { background: #a32d2d; }
+.link { color: #0f6e56; }
+
+.ok { background: #eaf3de; border: 1px solid #97c459; padding: 10px; border-radius: 6px; margin-bottom: 14px; }
+.error { background: #fcebeb; border: 1px solid #f09595; padding: 10px; border-radius: 6px; margin-bottom: 14px; }
+
+.login { max-width: 340px; margin: 12vh auto; }
